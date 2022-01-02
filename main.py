@@ -55,6 +55,7 @@ class Canvas(QMainWindow):
 
 def main():
     app = QApplication(sys.argv)
+    QApplication.setOverrideCursor(Qt.CrossCursor)
     window = Canvas()
     window.show()
     app.exec_()
@@ -77,7 +78,8 @@ def on_press(key):
 
 def on_release(key):
     global progress
-    progress = 0 if progress <= 1 else progress - 1
+    progress = 0 if progress < 1 else progress - 1
+    print(str(progress), end="\r")
 
 if __name__ == '__main__':
     while True:
