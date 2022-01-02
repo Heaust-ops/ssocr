@@ -11,6 +11,8 @@
 **Any text that's in that area should now be copied for you to paste!**
 **Use this to quickly copy text that's in images or unselectable.**
 
+![Gif Demo](https://imgur.com/a/Ue8le69)
+
 ## How to setup
 
 **You need 4 things installed,**
